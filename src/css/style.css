@@ -1,0 +1,152 @@
+@font-face{
+    font-family: OnePieceFont;
+    src: url("../fonts/onepiecefont.ttf");
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-header .image-logo {
+    width: 65px;
+}
+
+.nav-header .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-header nav a {
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.nav-header nav a:hover {
+    background-color: #d5011d;
+}
+
+.container {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    height: calc(100vh - 150px);
+    padding: 0 30px 30px;
+}
+
+.container .image-namelogo {
+    max-width: 500px;
+    width: 50%;
+    
+}
+
+.container .main-desc { 
+    color: #a8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0;
+    text-align: justify;
+}
+
+.container .main-btn {
+    background-color: #ff0021;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.5s all ease-in-out;
+}
+
+.container .main-btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 0, 0, 0.867);
+}
+
+.background-video {
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.background-video video {
+    height: 100vh;
+}
+
+.background-video::after {
+    content: "";
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;  
+
+}
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.modal-close {
+    background-color: white;
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.modal-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-main {
+    width: 400px;
+}
