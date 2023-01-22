@@ -1,4 +1,4 @@
- @media (max-width: 560px) {
+ @media (max-width: 720px) {
     body {
         background-color: black;
     }
@@ -43,7 +43,7 @@
     }
 
     #video {
-        width: 260px;
+        width: 300px;
         height: 360px;
     }
  }
